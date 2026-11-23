@@ -1,0 +1,29 @@
+package p40;
+import java.util.Scanner;
+
+class Avarage {
+    int a, b,c;
+
+    void input() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first number: ");
+        a = sc.nextInt();
+
+        System.out.println("Enter second number: ");
+        b = sc.nextInt();
+        System.out.println("enter third number: ");
+        c=sc.nextInt();
+    }
+
+    void display() {
+        float avg=(a+b+c)/3.0f;
+        System.out.println("Avarage = " + avg);
+    }
+
+    public static void main(String[] args) {
+        Avarage obj = new Avarage();
+        obj.input();
+        obj.display();
+    }
+}
